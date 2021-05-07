@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/icon" />
+    <title>Front-end Developer Test Task</title>
+</head>
+
+<body class="root">
+    <header class="header">
+        <div class="header__wrap">
+            <img class="header__logo" src="" alt="">
+            <h1 class="header__title">Front-end Developer Test Task</h1>
+        </div>
+        <span class="header__cart-quantity"></span>
+    </header>
+    <hr class="separator">
+    <main class="main">
+        <div class="main__wrapper">
+            <form action="index.html" class="form" method="post">
+                <ul class="form__crumbs">
+                    <li class="form__crumb">Shipping</li>
+                    <li class="form__crumb">Billing</li>
+                    <li class="form__crumb">Payment</li>
+                </ul>
+                <div class="form__step form__step-0 form__step_none">
+                    <h2 class="form__title">Shipping Info</h2>
+                    <div class="form__wrap">
+                        <h2 class="form__subtitle">Recipient</h2>
+                        <label for="shipping-name" class="form__label">
+                            <input class="form__input" id="shipping-name" required minlength="2" maxlength="40"
+                                pattern="^([a-zA-Z]{2,}\s[a-zA-Z]{1,}'?-?[a-zA-Z]{2,}\s?([a-zA-Z]{1,})?)"
+                                placeholder="Full Name" type="text">
+                            <span id="shipping-name-mistake" class="form__text-mistake">Please enter recipient full
+                                name</span>
+                        </label>
+                        <label for="shipping-tel" class="form__label">
+                            <input class="form__input form__input_medium" required id="shipping-tel"
+                                placeholder="Daytime Phone" pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$"
+                                type="tel">
+                            <span id="shipping-tel-mistake" class="form__text-mistake">Check input validity</span>
+                            <p class="form__text">For&nbsp;delivery questions&nbsp;only</p>
+                        </label>
+                    </div>
+                    <div class="form__wrap">
+                        <h2 class="form__subtitle">Address</h2>
+                        <label for="shipping-street" class="form__label">
+                            <input class="form__input" id="shipping-street" required placeholder="Street Address"
+                                type="text">
+                            <span id="shipping-street-mistake" class="form__text-mistake">Check input validity</span>
+                        </label>
+                        <label for="shipping-info" class="form__label">
+                            <input class="form__input" id="shipping-info"
+                                placeholder="Apt, Suite, Bldg, Gate Code. (optional)" type="text">
+                            <span id="shipping-info-mistake" class="form__text-mistake">Check input validity</span>
+                        </label>
+                    </div>
+                    <div class="form__wrap">
+                        <label for="shipping-city" class="form__label">
+                            <input class="form__input" required placeholder="City" id="shipping-city"
+                                pattern="[a-zA-Z0-9]+" name="City" type="text">
+                            <span id="shipping-city-mistake" class="form__text-mistake">Check input validity</span>
+                            <button class="form__geobtn"></button>
+                        </label>
+                    </div>
+                    <div class="form__wrap form__wrap_flex">
+                        <label for="shipping-country" class="form__label form__wrap_select">
+                            <ul class="form__list"></ul>
+                            <input class="form__input form__input_select form__input_medium" id="shipping-country"
+                                required pattern="[a-zA-Z0-9]+" name="Country" placeholder="Country" type="text">
+                            <span id="shipping-country-mistake" class="form__text-mistake">Check input validity</span>
+                        </label>
+                        <label for="shipping-zip" class="form__label">
+                            <input class="form__input form__input_small" required placeholder="ZIP" id="shipping-zip"
+                                name="zip" type="number">
+                            <span id="shipping-zip-mistake" class="form__text-mistake">Check input validity</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form__step form__step-1 form__step_none">
+                    <h2 class="form__title">Billing Information</h2>
+                    <a href="#" class="form__link">Same as shipping</a>
+                    <div class="form__wrap">
+                        <h2 class="form__subtitle">Billing Contact</h2>
+                        <label for="billing-name" class="form__label">
+                            <input class="form__input" id="billing-name" required minlength="2" maxlength="40"
+                                pattern="^([a-zA-Z]{2,}\s[a-zA-Z]{1,}'?-?[a-zA-Z]{2,}\s?([a-zA-Z]{1,})?)"
+                                placeholder="Full Name" type="text">
+                            <span id="billing-name-mistake" class="form__text-mistake">Please enter recipient full
+                                name</span>
+                        </label>
+                        <label for="billing-address" class="form__label">
+                            <input class="form__input" id="billing-address" required
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email Address"
+                                type="email">
+                            <span id="billing-address-mistake" class="form__text-mistake">Check input validity</span>
+                        </label>
+                    </div>
+                    <div class="form__wrap">
+                        <h2 class="form__subtitle">Billing Address</h2>
+                        <label for="billing-street" class="form__label">
+                            <input class="form__input" id="billing-street" required placeholder="Street Address"
+                                type="text">
+                            <span id="billing-street-mistake" class="form__text-mistake">Check input validity</span>
+                        </label>
+                        <label for="billing-info" class="form__label">
+                            <input class="form__input" id="billing-info"
+                                placeholder="Apt, Suite, Bldg, Gate Code. (optional)" type="text">
+                            <span id="billing-info-mistake" class="form__text-mistake">Check input validity</span>
+                        </label>
+                    </div>
+                    <div class="form__wrap">
+                        <label for="billing-city" class="form__label">
+                            <input class="form__input" required placeholder="City" id="billing-city"
+                                pattern="[a-zA-Z0-9]+" name="City" type="text">
+                            <span id="billing-city-mistake" class="form__text-mistake">Check input validity</span>
+                            <button class="form__geobtn"></button>
+                        </label>
+                    </div>
+                    <div class="form__wrap form__wrap_flex">
+                        <label for="billing-country" class="form__label form__wrap_select">
+                            <ul class="form__list"></ul>
+                            <input class="form__input form__input_select form__input_medium" id="billing-country"
+                                required pattern="[a-zA-Z0-9]+" name="Country" placeholder="Country" type="text">
+                            <span id="billing-country-mistake" class="form__text-mistake">Check input validity</span>
+                        </label>
+                        <label for="billing-zip" class="form__label">
+                            <input class="form__input form__input_small" required placeholder="ZIP" id="billing-zip"
+                                name="zip" type="number">
+                            <span id="billing-zip-mistake" class="form__text-mistake">Check input validity</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form__step form__step-2 form__step_none">
+                    <h2 class="form__title">Payment</h2>
+                    <div class="form__wrap">
+                        <h2 class="form__subtitle">Cardholder Name</h2>
+                        <label for="card-name" class="form__label">
+                            <input class="form__input" type="text" required minlength="2" maxlength="40"
+                                pattern="^([a-zA-Z]{2,}\s[a-zA-Z]{1,}'?-?[a-zA-Z]{2,}\s?([a-zA-Z]{1,})?)" id="card-name"
+                                placeholder="Name as it appears on your card">
+                            <span id="card-name-mistake" class="form__text-mistake">Please enter recipient full
+                                name</span>
+                        </label>
+                        <h2 class="form__subtitle">Card Number</h2>
+                        <label for="cc-number" class="form__label">
+                            <input class="form__input" name="cc-number" required minlength="16" maxlength="16"
+                                type="number" id="cc-number" autocomplete="off" placeholder="XXXX XXXX XXXX XXXX XXXX">
+                            <span id="cc-number-mistake" class="form__text-mistake">Check input validity</span>
+                        </label>
+                    </div>
+                    <div class="form__wrap form__wrap_flex">
+                        <div class="form__wrap">
+                            <h2 class="form__subtitle">Expire Date</h2>
+                            <label for="cc-exp" class="form__label">
+                                <input class="form__input form__input_smallest" type="number" id="cc-exp"
+                                    autocomplete="cc-exp" placeholder="MM / YY">
+                                <span id="cc-exp-mistake" class="form__text-mistake">Check input validity</span>
+                            </label>
+                        </div>
+                        <div class="form__wrap">
+                            <h2 class="form__subtitle">Security Code</h2>
+                            <label for="cvv" class="form__label">
+                                <input class="form__input  form__input_smallest" type="number" name="cvv" id="cvv"
+                                    autocomplete="off">
+                                <span id="cvv-mistake" class="form__text-mistake">Check input validity</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="form__btn">Next</button>
+            </form>
+            <section class="cart">
+                <h3 class="cart__title">Order Summary</h3>
+                <a  class="cart__link" href="#">edit order</a>
+                <ul class="cart__items">
+                </ul>
+                <div class="cart__preresult">
+                    <p class="cart__text">Subtotal<span class="cart__subtotal"></span></p>
+                    <p class="cart__text">Shipping<span class="cart__shipping"></span></p>
+                    <p class="cart__text">Taxes<span class="cart__taxes"></span></p>
+                </div>
+                <p class="cart__text cart__text_result">Total<span class="cart__total"></span></p>
+            </section>
+        </div>
+    </main>
+    <template id="cart-item-template">
+        <li class="cart-item">
+            <img src="#" alt="" class="cart-item__image">
+            <div class="cart-item__info">
+                <h4 class="cart-item__name">
+                </h4>
+                <p class="cart-item__description"></p>
+                <span class="cart-item__quant">Quantity:</span><span class="cart-item__quantity"></span>
+            </div>
+            <div class="cart-item__wrap">
+                <span class="cart-item__currency"></span><span class="cart-item__price"></span>
+            </div>
+        </li>
+    </template>
+</body>
+</html>

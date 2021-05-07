@@ -1,0 +1,49 @@
+.cart-item{
+    @include boxNorm; 
+    display: grid;
+    grid-template-columns: 45px auto 50px;
+    grid-gap: 10px;
+    padding-bottom: 10px;
+    padding-top: 12px;
+    border-bottom: 1px solid #979797;
+    &__image{
+        @include boxNorm; 
+        max-width: 45px;
+        height: auto;
+    }
+    &__name{
+        @include boxNorm; 
+        padding-bottom: 7px;
+        font: {
+            family: $font-stack;
+            size: 12px;
+            weight: 400;
+        } 
+            line-height: 0.9    2;
+            color: #777879;
+    }
+    &__price, &__currency{
+        @include boxNorm; 
+        font: {
+            family: $font-stack;
+            size: 12px;
+            weight: 400;
+        } 
+            line-height: 0.92;
+            color: #777879;
+    }
+    &__description, &__quantity, &__quant{
+        @include boxNorm; 
+        font: {
+            family: $font-stack;
+            size: 10px;
+            weight: 400;
+        } 
+            line-height: 0.12;
+            color: #2B2525;
+    }
+    &__wrap{
+        text-align: right;
+    }
+    
+}

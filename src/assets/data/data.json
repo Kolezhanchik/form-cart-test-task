@@ -1,0 +1,38 @@
+{
+    "id": 1,
+    "name":"",
+    "last-name":"",
+    "taxes": 12.12,
+    "shipping": 0,
+    "cart":[
+        {
+            "itemId":1,
+            "itemName":"The Chelsea Boot",
+            "price": 235,
+            "about": "Black",
+            "image": "https://s0.rbk.ru/v6_top_pics/resized/500x312_crop/media/img/9/60/756200680536609.jpg",
+            "quantity" : "1",
+            "currency":"$"            
+        },
+        {
+            "itemId":2,
+            "itemName":"The Twill Snap Backpack",
+            "price": 65,
+            "about": "Reverse Denim + Brown leather",
+            "image": "https://s0.rbk.ru/v6_top_pics/resized/500x312_crop/media/img/9/60/756200680536609.jpg",
+            "quantity" : "1",
+            "currency":"$"
+        },
+        {
+            "itemId":3,
+            "itemName":"The Twill Zip Tote",
+            "price": 48,
+            "about": "Reverse Denim + Black leather",
+            "image": "https://s0.rbk.ru/v6_top_pics/resized/500x312_crop/media/img/9/60/756200680536609.jpg",
+            "quantity" : "1",
+            "currency":"$"
+        }
+    
+    ]
+}
+

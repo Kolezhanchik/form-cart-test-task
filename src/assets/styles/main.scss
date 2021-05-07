@@ -1,0 +1,13 @@
+.main{
+    @include boxNorm;
+    width: 100vw;
+    height: calc(100vh - 50px);
+    padding-top: 45px;    
+    background-color: #E6E9F0;
+    &__wrapper{
+        @include boxNorm;
+        max-width: 700px;
+        margin: 0 auto;
+        display: flex;
+    }
+}
