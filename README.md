@@ -1,7 +1,7 @@
 ## Тестовое задание на вакансию Front-end разработчика
 
 ###### ссылка на gh-pages 
-https://kolenhen.github.io/form-cart-test-task/
+https://Kolezhanchik.github.io/form-cart-test-task/
 
 ##### Инструкция по установке: 
 ```
